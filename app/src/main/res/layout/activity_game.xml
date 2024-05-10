@@ -8,8 +8,8 @@
 
     <com.muen.huarongdao.main.BoardView
         android:id="@+id/board"
-        android:layout_width="400dp"
-        android:layout_height="400dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
         android:layout_gravity="center"
         android:background="@color/boardViewBg" />
 
