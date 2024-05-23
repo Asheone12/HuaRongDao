@@ -17,11 +17,11 @@ public class BoardView extends ViewGroup {
     /**
      * 每一行有多少个棋子
      */
-    private int mSizeX = 4;
+    private int mSizeX = 3;
     /**
      * 有多少行棋子
      */
-    private int mSizeY = 4;
+    private int mSizeY = 3;
     private int mChildSize;
 
     private int mChildWidth;

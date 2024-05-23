@@ -139,6 +139,9 @@ public class GameActivity extends AppCompatActivity {
         }
         if (scoreRank == -1) {
             new AlertDialog.Builder(this)
+                    .setPositiveButton("我知道了",(d,which) ->{
+                        finish();
+                    })
                     .setTitle("恭喜完成")
                     .show();
             return;
@@ -170,6 +173,7 @@ public class GameActivity extends AppCompatActivity {
             Gson gson = new Gson();
             String json = gson.toJson(mHighScoreList);
             mPref.edit().putString(getString(R.string.pref_key_high_score), json).apply();
+            finish();
         });
         dialog.setCancelable(false);
         dialog.show();
